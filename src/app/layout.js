@@ -15,10 +15,8 @@ export const metadata = {
   title: "Maru Cirigliano | Producer & Fashion Stylist :)",
   openGraph: {
     title: "Maru Cirigliano | Producer & Fashion Stylist :)",
-    description: "Explora mi portfolio. Conoce mi trabajo en la industria de la moda y la producción de eventos.",
-    url: "https://marucirigliano.vercel.app", // Reemplaza con tu URL
     image: "/images/foto_portada.jpeg", // Imagen destacada para Open Graph
-    type: "website", // Tipo de contenido
+    type: "profile", // Tipo de contenido
   },
 };
 
