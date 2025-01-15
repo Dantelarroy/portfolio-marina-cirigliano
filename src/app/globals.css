@@ -19,3 +19,17 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Estilos adicionales */
+.masthead-text {
+  color: #FFFFFF;
+  font-family: 'bjpg', sans-serif; /* Cambia esto si no tienes esa fuente */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 28px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+  text-transform: none;
+}
