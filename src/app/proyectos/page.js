@@ -34,7 +34,7 @@ export default function Proyectos() {
             id: 3,
             title: 'Another session',
             images: [
-                'images/image00008.jpeg',
+                '/images/image00008.jpeg',
                 '/images/wow_1.jpeg',
                 '/images/wow_2.jpeg',
             ],
@@ -51,17 +51,17 @@ export default function Proyectos() {
                 <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col justify-center items-center">
                     {/* Barra de navegación alineada a la izquierda y título alineado a la derecha */}
                     <div className="absolute top-0 left-0 w-full flex justify-between items-center px-6 py-4">
-                        <nav className="flex space-x-6">
-                            <a href="/" className="text-xl font-bold text-white">Home</a>
-                            <a href="/about" className="text-xl font-bold text-white">About Me</a>
-                            <a href="/contact" className="text-xl font-bold text-white">Contact</a>
+                        <nav className="flex space-x-6 text-center md:text-left w-full md:w-auto">
+                            <a href="/" className="text-sm md:text-xl font-semibold md:font-bold text-white">Home</a>
+                            <a href="/about" className="text-sm md:text-xl font-semibold md:font-bold text-white">About Me</a>
+                            <a href="/contact" className="text-sm md:text-xl font-semibold md:font-bold text-white">Contact</a>
                         </nav>
                         {/* Título alineado a la derecha */}
-                        <h1 className="text-xl font-bold text-white">
+                        <h1 className="text-sm md:text-xl font-semibold md:font-bold text-white absolute right-6 top-4">
                             Marina Cirigliano
                         </h1>
                     </div>
-                    <p className="masthead-text text-sm absolute bottom-20 text-center">
+                    <p className="masthead-text text-sm absolute bottom-20 text-center px-4">
                         Where fashion meets passion
                     </p>
                     <div className="flex justify-center items-center absolute bottom-8">
@@ -90,7 +90,7 @@ export default function Proyectos() {
                                 alt={proyecto.title}
                                 className="w-full h-auto object-cover"
                             />
-                            <h1 className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-2xl font-bold text-white">
+                            <h1 className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-lg md:text-2xl font-bold text-white">
                                 {proyecto.title}
                             </h1>
                         </div>
@@ -106,7 +106,7 @@ export default function Proyectos() {
                             >
                                 &times;
                             </button>
-                            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                            <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
                                 {selectedProject.title}
                             </h3>
                             <p className="text-gray-600 mb-4">{selectedProject.description}</p>

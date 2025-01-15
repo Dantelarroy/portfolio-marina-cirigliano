@@ -14,15 +14,19 @@
   }
 }
 
+/* Estilo global para el cuerpo */
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Estilos adicionales */
+/* Estilos para la clase masthead-text */
 .masthead-text {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: 'bjpg', sans-serif; /* Cambia esto si no tienes esa fuente */
   font-size: 18px;
   font-style: normal;
@@ -32,4 +36,43 @@ body {
   margin-top: 0px;
   text-align: center;
   text-transform: none;
+}
+
+/* Estilos de fuentes y colores en modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .masthead-text {
+    color: #171717; /* Cambia el color de texto para modo oscuro si es necesario */
+  }
+
+  /* Estilo de la página en modo oscuro */
+  body {
+    color: var(--foreground);
+    background: var(--background);
+  }
+}
+
+/* Media Queries para pantallas pequeñas y móviles */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+  }
+
+  .masthead-text {
+    font-size: 16px; /* Reduce el tamaño de la fuente de masthead-text en pantallas pequeñas */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 24px;
+  }
+}
+
+/* Media Queries para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; /* Ajusta aún más el tamaño de la fuente */
+  }
+
+  .masthead-text {
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
+    line-height: 22px;
+  }
 }
